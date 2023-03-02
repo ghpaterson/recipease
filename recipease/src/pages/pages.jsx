@@ -1,11 +1,14 @@
 import React from 'react'
 import Homepage from './homepage'
+import Cuisine from './cuisine'
+import {Route, Routes} from 'react-router-dom'
 
 function Pages() {
   return (
-    <div>
-        <Homepage />
-    </div>
+    <Routes>
+      <Route path="/" element={<Homepage />} />
+      <Route path="/cuisine/:type" element={<Cuisine />} />
+    </Routes>
   )
 }
 
