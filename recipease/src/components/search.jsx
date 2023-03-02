@@ -1,16 +1,20 @@
 import styled from "styled-components"
 import {useState} from 'react'
 import {ImSearch} from 'react-icons/im'
+import {useNavigate} from 'react-router-dom';
+
 
 
 
 function Search() {
 
   const [input, setInput] = useState('');
+  const navigate = useNavigate();
 
   const submitHandler = (e) => {
     e.preventDefault();
-  }
+    navigate('/searched/' + input)
+  };
 
 
   return (
