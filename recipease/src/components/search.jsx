@@ -5,10 +5,23 @@ import {ImSearch} from 'react-icons/im'
 
 
 function Search() {
+
+  const [input, setInput] = useState('');
+
+  const submitHandler = (e) => {
+    e.preventDefault();
+  }
+
+
   return (
-    <FormStyle>
+    <FormStyle onSubmit={submitHandler}>
       <div>
-        <input type="text" />
+        <ImSearch></ImSearch>
+        <input 
+          onChange={(e) => setInput(e.target.value)}
+          type="text" 
+          value={input} 
+        />
       </div>
     </FormStyle>
   )
@@ -34,7 +47,7 @@ const FormStyle = styled.form`
   svg {
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 0%;
     transform: translate(100%, -50%);
     color: white;
   }
