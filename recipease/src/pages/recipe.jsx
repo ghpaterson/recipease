@@ -36,15 +36,19 @@ function Recipe() {
         <Button className={activeTab === 'method' ? 'active' : ''} onClick={() => setActiveTab("method")}>
           Method
         </Button>
-        <div>
-          <h3 dangerouslySetInnerHTML={{__html: details.summary}}></h3>
-          <h3 dangerouslySetInnerHTML={{__html: details.instructions}}></h3>
-        </div>
-        <ul>
-          {details.extendedIngredients.map((ingredient) => (
-            <li key={ingredient.id}>{ingredient.original}</li>
-          ))}
-        </ul>
+        {activeTab === 'method' && (
+          <div>
+            <h3 dangerouslySetInnerHTML={{__html: details.summary}}></h3>
+            <h3 dangerouslySetInnerHTML={{__html: details.instructions}}></h3>
+          </div>
+        )}
+        {activeTab === 'ingredients' && (
+           <ul>
+           {details.extendedIngredients.map((ingredient) => (
+             <li key={ingredient.id}>{ingredient.original}</li>
+           ))}
+         </ul>
+        )}
       </Info>
     </DetailWrapper>
   )
@@ -77,7 +81,7 @@ const Button = styled.button`
   padding: 1rem 2rem;
   color: #36032a;
   background: white;
-  border: 2px #313131;
+  border: 2px solid-black;
   margin-right: 2rem;
   font-weight: 600;
 `;
