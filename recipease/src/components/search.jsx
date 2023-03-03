@@ -44,7 +44,7 @@ const FormStyle = styled.form`
     font-size: 1rem;
     color: white;
     padding: 1rem 3rem;
-    border-radius: 1rem;
+    border-radius: 2rem;
     outline: none;
     width: 100%;
   }
@@ -53,7 +53,7 @@ const FormStyle = styled.form`
     top: 50%;
     left: 0%;
     transform: translate(100%, -50%);
-    color: white;
+    color: rgb(228, 217, 202);
   }
 `
 

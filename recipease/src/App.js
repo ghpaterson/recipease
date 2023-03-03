@@ -24,19 +24,21 @@ function App() {
 
 const Logo = styled(Link)`
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: 400;
   font-family: "lato", sans-serif;
+  color: #36032a;
 `;
 
 const Nav = styled.div`
-  padding: 3rem 0rem;
+  padding: 2rem 0rem;
   display: flex;
   justify-content: flex-start;
   align-items: center;
 
   svg {
-    font-size: 2rem;
+    font-size: 3rem;
+    color: #36032a;
   }
 `;
 export default App;
