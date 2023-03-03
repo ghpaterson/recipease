@@ -8,11 +8,13 @@ function Recipe() {
 
   let params = useParams();
   const [details, setDetails] = useState({});
+  const [activeTab, setActiveTab] = useState('Ingredients');
 
     const fetchDetails = async () => {
       const data = await fetch(`https://api.spoonacular.com/recipes/${params.name}/information?apiKey=${process.env.REACT_APP_SPOONACULAR_API}`)
       const detailsData = await data.json();
       setDetails(detailsData);
+      console.log(detailsData);
     };
 
   
@@ -28,8 +30,12 @@ function Recipe() {
         <img src={details.image} alt=""/>
       </div>
       <Info>
-        <Button>Ingredients</Button>
-        <Button>Method</Button>
+        <Button className={activeTab === 'ingredients' ? 'active' : ''} onClick={() => setActiveTab("ingredients")}>
+          Ingredients
+        </Button>
+        <Button className={activeTab === 'method' ? 'active' : ''} onClick={() => setActiveTab("method")}>
+          Method
+        </Button>
       </Info>
     </DetailWrapper>
   )
