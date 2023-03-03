@@ -19,7 +19,7 @@ const [popular, setPopular] = useState([]);
     if (checkLocalStorage){
       setPopular(JSON.parse(checkLocalStorage))
     }else{
-      const api = await fetch(`https://api.spoonacular.com/recipes/random?apiKey=${process.env.REACT_APP_SPOONACULAR_API}&number=8`);
+      const api = await fetch(`https://api.spoonacular.com/recipes/random?apiKey=${process.env.REACT_APP_SPOONACULAR_API}&number=10`);
       const data = await api.json();
 
       localStorage.setItem('popular', JSON.stringify(data.recipes))
@@ -33,8 +33,8 @@ const [popular, setPopular] = useState([]);
           <Wrapper>
             <h3>Trending Recipes</h3>
             <Splide options={{
-              perPage: 4,
-              arrows: false, 
+              perPage: 3,
+              arrows: true, 
               pagination: false,
               drag: "free",
               gap: "3rem",
@@ -60,6 +60,10 @@ const [popular, setPopular] = useState([]);
 
 const Wrapper = styled.div`
   margin: 4rem 0rem;
+
+  h3 {
+    color: #36032a;
+  }
 `;
 
 const Card = styled.div`
