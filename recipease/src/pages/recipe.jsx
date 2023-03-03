@@ -28,6 +28,7 @@ function Recipe() {
       <div>
         <h2>{details.title}</h2>
         <img src={details.image} alt=""/>
+        <h3 dangerouslySetInnerHTML={{__html: details.summary}}></h3>
       </div>
       <Info>
         <Button className={activeTab === 'ingredients' ? 'active' : ''} onClick={() => setActiveTab("ingredients")}>
@@ -38,7 +39,6 @@ function Recipe() {
         </Button>
         {activeTab === 'method' && (
           <div>
-            <h3 dangerouslySetInnerHTML={{__html: details.summary}}></h3>
             <h3 dangerouslySetInnerHTML={{__html: details.instructions}}></h3>
           </div>
         )}
