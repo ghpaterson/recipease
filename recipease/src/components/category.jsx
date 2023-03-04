@@ -45,12 +45,12 @@ const StyledLink = styled(NavLink)`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-radius: 100%;
+  border-radius: 2rem;
   margin-right: 2rem;
   text-decoration: none;
   background: linear-gradient(35deg, #420719, #420719);
-  width: 6rem;
-  height: 6rem;
+  width: 7rem;
+  height: 4.5rem;
   cursor: pointer;
   transform: scale(0.7);
 

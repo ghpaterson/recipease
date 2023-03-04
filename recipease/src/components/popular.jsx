@@ -31,7 +31,7 @@ const [popular, setPopular] = useState([]);
   return (
     <div>
           <Wrapper>
-            <h3>Trending Recipes</h3>
+            <h3>Trending</h3>
             <Splide options={{
               perPage: 3,
               arrows: true, 
