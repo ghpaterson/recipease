@@ -55,7 +55,7 @@ function Recipe() {
 }
 
 const DetailWrapper = styled.div`
-  margin-top: 10rem;
+  margin-top: 4rem;
   margin-bottom: 5rem;
   display: flex;
   .active {
@@ -63,8 +63,18 @@ const DetailWrapper = styled.div`
     color: white;
   }
 
+  img {
+    border-radius: 8px;
+
+  }
+
   h2 {
     margin-bottom: 2rem;
+  }
+
+  h3 {
+    font-size: 1rem;
+    line-height: 2rem;
   }
 
   li {
@@ -79,15 +89,19 @@ const DetailWrapper = styled.div`
 
 const Button = styled.button`
   padding: 1rem 2rem;
+
   color: #36032a;
   background: white;
   border: 2px solid-black;
   margin-right: 2rem;
   font-weight: 600;
+  font-size: 8px;
+  border-radius: 12px;
 `;
 
 const Info = styled.div`
-  margin-left: 10rem;
+  margin-left: 6rem;
+  font-size: 12px;
 `;
 
 export default Recipe;

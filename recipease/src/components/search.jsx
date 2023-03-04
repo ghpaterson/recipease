@@ -40,13 +40,13 @@ const FormStyle = styled.form`
   
   input {
     border: none;
-    background: linear-gradient(35deg, #36032a, #21011a);
+    background: linear-gradient(35deg, #6096b4, #6096b4);
     font-size: 1rem;
     color: white;
     padding: 1rem 3rem;
     border-radius: 2rem;
     outline: none;
-    width: 100%;
+    width: 90%;
   }
   svg {
     position: absolute;

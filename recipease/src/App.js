@@ -27,7 +27,7 @@ const Logo = styled(Link)`
   font-size: 2rem;
   font-weight: 400;
   font-family: "lato", sans-serif;
-  color: #36032a;
+  color: #420719;
 `;
 
 const Nav = styled.div`
@@ -38,7 +38,7 @@ const Nav = styled.div`
 
   svg {
     font-size: 3rem;
-    color: #36032a;
+    color: #420719;
   }
 `;
 export default App;
