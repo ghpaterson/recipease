@@ -33,7 +33,7 @@ function Veggie() {
           <Wrapper>
             <h3>Vegetarian</h3>
             <Splide options={{
-              perPage: 3,
+              perPage: 4,
               arrows: true, 
               pagination: false,
               drag: "free",
@@ -59,7 +59,7 @@ function Veggie() {
 }
 
 const Wrapper = styled.div`
-  margin: 2rem 0rem;
+  margin: 1rem 0rem;
   
   h3 {
     color: #36032a;
@@ -74,6 +74,7 @@ const Card = styled.div`
 
   img {
     border-radius: 2rem;
+    border: 4px solid #6096b4;
     position: absolute;
     left: 0;
     width: 100%;
@@ -104,7 +105,8 @@ const Gradient = styled.div`
   position: absolute;
   width: 100%;
   height: 100%;
-  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6));
+  opacity: ;
 `;
 
 export default Veggie

@@ -33,7 +33,7 @@ const [popular, setPopular] = useState([]);
           <Wrapper>
             <h3>Trending</h3>
             <Splide options={{
-              perPage: 3,
+              perPage: 4,
               arrows: true, 
               pagination: false,
               drag: "free",
@@ -74,6 +74,7 @@ const Card = styled.div`
 
   img {
     border-radius: 2rem;
+    border: 4px solid #6096b4;
     position: absolute;
     left: 0;
     width: 100%;
@@ -104,6 +105,6 @@ const Gradient = styled.div`
   position: absolute;
   width: 100%;
   height: 100%;
-  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6));
 `;
 export default Popular

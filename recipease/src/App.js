@@ -36,7 +36,7 @@ const Nav = styled.div`
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  background-color: #3b809c;
+  background-color: #6096b4;
   margin-top: 1rem;
   margin-bottom: 1rem;
 

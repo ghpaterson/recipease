@@ -37,7 +37,7 @@ function Category() {
 const List = styled.div`
   display: flex;
   justify-content: center;
-  margin: 1.5rem 0rem;    
+  margin: 1rem 0rem;    
 `;
 
 const StyledLink = styled(NavLink)`
@@ -46,6 +46,7 @@ const StyledLink = styled(NavLink)`
   justify-content: center;
   align-items: center;
   border-radius: 2rem;
+  border: 2px solid #6096b4;
   margin-right: 2rem;
   text-decoration: none;
   background: linear-gradient(35deg, #420719, #420719);
