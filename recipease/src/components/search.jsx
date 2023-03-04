@@ -40,9 +40,9 @@ const FormStyle = styled.form`
   
   input {
     border: none;
-    background: linear-gradient(35deg, #6096b4, #6096b4);
+    background: linear-gradient(35deg, #6096b4 , #6096b4);
     font-size: 1rem;
-    color: white;
+    color: #F7F5EB;
     padding: 1rem 3rem;
     border-radius: 2rem;
     outline: none;
@@ -53,7 +53,7 @@ const FormStyle = styled.form`
     top: 50%;
     left: 0%;
     transform: translate(100%, -50%);
-    color: rgb(228, 217, 202);
+    color: #F7F5EB;
   }
 `
 

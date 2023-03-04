@@ -31,14 +31,19 @@ const Logo = styled(Link)`
 `;
 
 const Nav = styled.div`
+  border-radius: 2rem;
   padding: 2rem 0rem;
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  background-color: #3b809c;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 
   svg {
     font-size: 3rem;
     color: #420719;
+    margin-left: 1rem;
   }
 `;
 export default App;
