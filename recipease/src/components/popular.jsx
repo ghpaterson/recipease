@@ -62,7 +62,8 @@ const Wrapper = styled.div`
   margin: 4rem 0rem;
 
   h3 {
-    color: #36032a;
+    color: #1A1313;
+    font-family: "Lato", sans-serif;
   }
 `;
 
@@ -74,7 +75,7 @@ const Card = styled.div`
 
   img {
     border-radius: 2rem;
-    border: 4px solid #6096b4;
+    border: 4px solid #e8af10;
     position: absolute;
     left: 0;
     width: 100%;

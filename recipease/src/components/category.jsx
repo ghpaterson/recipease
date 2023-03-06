@@ -46,18 +46,19 @@ const StyledLink = styled(NavLink)`
   justify-content: center;
   align-items: center;
   border-radius: 2rem;
-  border: 2px solid #6096b4;
   margin-right: 2rem;
   text-decoration: none;
-  background: linear-gradient(35deg, #420719, #420719);
+  background: linear-gradient(35deg, #fa440c, #fa440c);
   width: 7rem;
   height: 4.5rem;
   cursor: pointer;
   transform: scale(0.7);
+  border: 2px solid #e8af10;
 
   h4 {
     color: #F7F5EB;
     font-size: 0.9rem;
+    font-family: 
   }
 
   svg {
@@ -65,7 +66,7 @@ const StyledLink = styled(NavLink)`
     font-size: 1.5rem;
   }
   &.active{
-    background: linear-gradient(to right, #6096b4, #6096b4);
+    background: linear-gradient(to right, #e8af10, #e8af10);
 
     svg {
       color: rgb(228, 217, 202);

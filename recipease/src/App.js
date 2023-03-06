@@ -26,8 +26,8 @@ const Logo = styled(Link)`
   text-decoration: none;
   font-size: 2rem;
   font-weight: 400;
-  font-family: "lato", sans-serif;
-  color: #420719;
+  font-family: "Shrikhand", cursive;
+  color: #f7f5eb;
 `;
 
 const Nav = styled.div`
@@ -36,13 +36,14 @@ const Nav = styled.div`
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  background-color: #6096b4;
+  background-color: #fa440c;
   margin-top: 1rem;
   margin-bottom: 1rem;
+  border: 2px solid #e8af10;
 
   svg {
     font-size: 3rem;
-    color: #420719;
+    color: #f7f5eb;
     margin-left: 1rem;
   }
 `;
