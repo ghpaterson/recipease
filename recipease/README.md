@@ -56,6 +56,10 @@ Open http://localhost:3000 to view and use the Recipease app in your browser.
 
 ## Screenshots
 
+Homepage
+
+![Homepage](./public/homepage.png)
+
 ## Packages used
 
 Here are some of the packages used mainly for styling, images and animations within the app
